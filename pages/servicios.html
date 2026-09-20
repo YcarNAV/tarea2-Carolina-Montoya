@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Catálogo y servicios de Moda Urbana.">
+  <meta name="author" content="Carolina Montoya Navarro">
+  <title>Moda Urbana | Productos y servicios</title>
+
+  <!-- Bootstrap 5 (CSS) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/servicios.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR: igual que en index.html, pero con rutas relativas ../ y "activo" con clase de Bootstrap -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="../index.html" title="Ir a la página principal">
+          MODA <span class="text-primary">URBANA</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
+                aria-controls="navbarMenu" aria-expanded="false" aria-label="Abrir menú de navegación">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarMenu">
+          <ul class="navbar-nav ms-auto" aria-label="Navegación principal">
+            <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="./servicios.html">Productos y servicios</a></li>
+            <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container py-5">
+    <p class="text-uppercase text-primary fw-semibold small mb-2">Lo que ofrecemos</p>
+    <h1 class="mb-4">Productos para crear tu propio look</h1>
+
+    <!-- CATÁLOGO: tabla con clases de Bootstrap -->
+    <section aria-labelledby="titulo-catalogo" class="mb-5">
+      <h2 id="titulo-catalogo" class="mb-3">Catálogo</h2>
+
+      <!-- table-responsive reemplaza tu clase "tabla-responsive":
+           permite hacer scroll horizontal en pantallas pequeñas sin romper el diseño -->
+      <div class="table-responsive">
+        <table class="table table-striped table-hover align-middle">
+          <caption>Productos destacados de Moda Urbana</caption>
+
+          <thead class="table-dark">
+            <tr>
+              <th scope="col">Producto</th>
+              <th scope="col">Descripción</th>
+              <th scope="col">Tallas</th>
+              <th scope="col">Precio</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Sueter Essential</td>
+              <td>Algodón suave, corte unisex</td>
+              <td>S, M, L, XL</td>
+              <td>$59.900</td>
+            </tr>
+            <tr>
+              <td>Botas Street</td>
+              <td>Botas con estilo urbano</td>
+              <td>S, M, L</td>
+              <td>$129.900</td>
+            </tr>
+            <tr>
+              <td>Jean Wide Leg</td>
+              <td>Denim de pierna ancha</td>
+              <td>28, 30, 32, 34</td>
+              <td>$149.900</td>
+            </tr>
+            <tr>
+              <td>Vestido Verano Primavera</td>
+              <td>Vestido ligero para la temporada</td>
+              <td>Única</td>
+              <td>$45.900</td>
+            </tr>
+            <tr>
+              <td>Anillos multiples</td>
+              <td>Anillos de diseño único enchapados en oro</td>
+              <td>A la medida</td>
+              <td>$180.000</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- SERVICIOS: mantenemos tu <ol> semántico, solo con utilidades de espaciado -->
+    <section class="mb-5" aria-labelledby="titulo-servicios">
+      <h2 id="titulo-servicios" class="mb-3">Nuestros servicios</h2>
+
+      <ol class="list-group list-group-numbered">
+        <li class="list-group-item"><strong>Asesoría de estilo:</strong> te ayudamos a combinar prendas.</li>
+        <li class="list-group-item"><strong>Personalización:</strong> estampamos algunos productos con tus ideas.</li>
+        <li class="list-group-item"><strong>Compra en línea:</strong> pide tus favoritos desde cualquier lugar.</li>
+      </ol>
+    </section>
+
+    <!-- VIDEO: aquí usamos "ratio" en vez de width/height fijos en el iframe -->
+    <section aria-labelledby="titulo-video">
+      <h2 id="titulo-video" class="mb-3">Conoce nuestra inspiración</h2>
+
+      <div class="ratio ratio-16x9">
+        <iframe
+            src="https://www.youtube.com/embed/Y-pkA5FZDWg?list=PL7i6XYfJRB6Sf3LIzPbb28gsG6xMVqyBt"
+            title="Reto de moda"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+        </iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-dark text-white text-center py-4">
+    <p class="mb-1">&copy; 2026 Moda Urbana. Todos los derechos reservados.</p>
+    <p class="mb-0">
+      <a class="text-white" href="mailto:modaurbana@kmail.com">modaurbana@kmail.com</a> · Cartagena, Colombia
+    </p>
+  </footer>
+
+  <!-- Bootstrap 5 (JS) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

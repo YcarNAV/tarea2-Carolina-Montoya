@@ -1,0 +1,18 @@
+@import url("main.css");
+
+/* Estilos exclusivos de Productos y servicios — solo lo que Bootstrap no trae */
+
+/* Encabezado de tabla en el naranja de marca.
+   Requiere quitar la clase "table-dark" del <thead> en servicios.html
+   para que este color se vea (si no, "table-dark" gana). */
+.table thead th {
+  background-color: #e95d36;
+  color: white;
+}
+
+/* Caption de la tabla con tu estilo original (opcional: Bootstrap ya le
+   da un estilo discreto por defecto si prefieres dejarlo sin tocar) */
+.table caption {
+  color: #686868;
+  font-weight: bold;
+}

@@ -1,0 +1,46 @@
+/* main.css — Ajustes mínimos compartidos por las 3 páginas.
+   Todo lo estructural (navbar, botones, grid, tablas, footer) ya lo hace Bootstrap.
+   Aquí solo dejamos identidad de marca, tipografía y algún detalle de accesibilidad. */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f7f4ee;
+  color: #171719;
+  line-height: 1.6;
+}
+
+/* Sobreescribe el color "primary" de Bootstrap por el naranja de tu marca.
+   Esto hace que btn-primary, text-primary, el link activo del navbar, etc.
+   se pinten de #e95d36 en vez del azul por defecto. */
+:root {
+  --bs-primary: #e95d36;
+  --bs-primary-rgb: 233, 93, 54;
+}
+
+.btn-primary {
+  background-color: #e95d36;
+  border-color: #e95d36;
+}
+
+.btn-primary:hover {
+  background-color: #c94725;
+  border-color: #c94725;
+}
+
+/* Tu marca en el navbar: no es un componente de Bootstrap */
+.navbar-brand span {
+  color: #e95d36;
+}
+
+/* Tu estilo de "kicker" (COLECCIÓN 2026, DESTACADOS, etc.) */
+.etiqueta {
+  color: #e95d36;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+/* Color de enlaces en el footer oscuro */
+footer a {
+  color: #ff9d84;
+}
